@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Connection settings -->
+        <property name="connection.url">jdbc:postgresql://localhost:5432/CapitalHumano</property> <!-- BD Mane -->
+	<property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+   	<property name="connection.username">postgres</property> <!-- DB User -->
+   	<property name="connection.password">postgres</property> <!-- DB Password -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- DB Dialect -->
+        <property name="current_session_context_class">thread</property>
+        <!-- <property name="show_sql">true</property> -->
+        <!-- <property name="format_sql">true</property> -->
+        
+        <!-- entities -->
+        <mapping class="entities.Puesto"/>
+        <mapping class="entities.Competencia"/>
+        <mapping class="entities.Factor"/>
+        <mapping class="entities.Pregunta"/>
+        <mapping class="entities.OpcionRespuesta"/>
+        <mapping class="entities.ItemOpcionRespuesta"/>
+        <mapping class="entities.Ponderacion"/>
+        <mapping class="entities.Puntuacion"/>
+        <mapping class="entities.RegistroAuditoria"/>
+        <mapping class="entities.Consultor"/>
+    </session-factory>
+</hibernate-configuration>
