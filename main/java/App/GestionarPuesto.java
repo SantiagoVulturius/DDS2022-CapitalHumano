@@ -1,7 +1,10 @@
 
 package App;
 
-import java.awt.BorderLayout;
+import javax.swing.JOptionPane;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import app.AltaPuesto;
 
 public class GestionarPuesto extends javax.swing.JPanel{
     private JFrame ventana;

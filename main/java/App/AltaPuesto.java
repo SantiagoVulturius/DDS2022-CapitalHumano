@@ -3,6 +3,7 @@ package app;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import App.GestionarPuesto;
 
 public class AltaPuesto extends javax.swing.JPanel {
     private static final long serialVersionUID = 1L;

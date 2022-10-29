@@ -5,6 +5,20 @@
  */
 package Daos;
 
+import Daos.interfaces.CandidatoDao;
+import Daos.interfaces.CompetenciaDao;
+import Daos.interfaces.ConsultorDao;
+import Daos.interfaces.CuestionarioDao;
+import Daos.interfaces.EjecucionDao;
+import Daos.interfaces.EvaluacionDao;
+import Daos.interfaces.FactorDao;
+import Daos.interfaces.OpcionRespuestaDao;
+import Daos.interfaces.ParametrosDao;
+import Daos.interfaces.PreguntaDao;
+import Daos.interfaces.PuestoDao;
+import Daos.interfaces.RegistroAuditoriaDao;
+import Daos.interfaces.RespuestaDao;
+
 public abstract class FactoryDao {
     public static final int POSTGRESQL_FACTORY = 1;
 
